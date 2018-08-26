@@ -67,6 +67,8 @@ def get_user():
 	:return: list: [headerName,count,startNum, value, limit]
 	'''
 
+	### Wrote this a couple years ago when I didn't know how to do this more efficiently.. 
+	#todo - clean this garbage up
 	store = shelve.open('DuplicateInputData')
 
 	if len(sys.argv) == 1:
